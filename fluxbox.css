@@ -1,0 +1,10 @@
+.container{
+    display:flux;
+
+}
+.container div {
+    background-color: rgb(89, 0, 255);
+    border:4px solid rgb(247, 247, 247);
+    height: 140px;
+    width:100px;
+}
