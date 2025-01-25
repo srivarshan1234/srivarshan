@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gunaseelan's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            display: flex;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header img{
+            width:50px;
+            height:50px
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+
+        .Heading{
+            margin-left: 35%;
+        }
+
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            display: one by one;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        /* Navigation Buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 30px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        footer {
+            background-color: #e6e8ea;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="image.png" alt="">
+        <div class="Heading">
+            <h1>V.sri varshan</h1>
+            <p>Web Developer | Designer | Programmer</p>
+        </div>
+        
+    </header>
+
+    <!-- Slider Container -->
+    <div class="slider-container">
+        <div class="slides">
+            <!-- Slide 1: About Me -->
+            <div class="slide">
+                <div>
+                    <h2>About Me</h2>
+                    <p>Hello, I'm sri varshan.v. I am a passionate web developer with a keen interest in creating dynamic web applications. I specialize in both front-end and back-end development, and my goal is to build user-friendly and efficient digital solutions.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Skills -->
+            <div class="slide skills">
+                <div>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 3: Projects -->
+            <div class="slide">
+                <div>
+                    <h2>Projects</h2>
+                    <p>Here are some of the projects I have worked on:</p>
+                    <ul>
+                        <li>Project 1: E-commerce Website</li>
+                        <li>Project 2: Blogging Platform</li>
+                        <li>Project 3: Task Manager Application</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 4: Contact -->
+            <div class="slide">
+                <div>
+                    <h2>Contact</h2>
+                    <p>If you'd like to connect, feel free to reach out via email at <strong>sri varshan@example.com</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Gunaseelan. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Slide Navigation -->
+    <script>
+        let currentSlide = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+
+            // Update the current slide index
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+            // Move the slides
+            slides.style.transform = translateX(-${currentSlide * 100}%);
+        }
+    </script>
+
+</body>
+</html>
