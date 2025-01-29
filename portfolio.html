@@ -1,182 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gunaseelan's Portfolio</title>
+    <title>Your Portfolio</title>
     <style>
         /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            /* Set a nature background image */
+            background: url('<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Set a nature background image */
+            background: url('') no-repeat center center fixed; /* Add your local image here */
+            background-size: cover; /* Ensure the background covers the entire screen */
+            color: #fff; /* White text for contrast */
         }
 
         header {
-            background: black;
-            color: white;
+            background: rgba(51, 51, 51, 0.7); /* Semi-transparent background for the header */
+            color: #fff;
             text-align: center;
-            padding: 50px;
-            display: flex;
+            padding: 30px 0;
         }
 
         header h1 {
-            font-size: 3em;
             margin: 0;
         }
-        header img{
-            width:50px;
-            height:50px
-        }
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0 0;
-        }
 
-        .Heading{
-            margin-left: 35%;
-        }
-
-
-        .skills ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .skills li {
-            display: one by one;
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            margin: 10px;
-            border-radius: 5px;
-        }
-
-        /* Navigation Buttons */
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            font-size: 30px;
-            border: none;
+        nav {
+            background: rgba(68, 68, 68, 0.7); /* Semi-transparent background for the navigation */
+            text-align: center;
             padding: 10px;
-            cursor: pointer;
-            z-index: 100;
         }
 
-        .prev {
-            left: 20px;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            display: inline-block;
         }
 
-        .next {
-            right: 20px;
+        nav a:hover {
+            background: #555;
+        }
+
+        section {
+            padding: 40px 10%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Add background to sections with slight transparency */
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .projects,
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project,
+        .skill {
+            background: rgba(255, 255, 255, 0.8); /* Light background for each project/skill */
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            border-radius: 8px;
         }
 
         footer {
-            background-color: #e6e8ea;
-            color: white;
+            background: #333;
+            color: #fff;
             text-align: center;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 10px;
         }
 
-        footer p {
-            margin: 0;
+        /* Animal icon styles */
+        .animal-icon {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .project h3,
+        .skill h3 {
+            color: #3e8e41; /* Matching text color with header */
+        }
+
+        .contact a {
+            color: #fff;
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Header Section -->
     <header>
-        <img src="image.png" alt="">
-        <div class="Heading">
-            <h1>V.sri varshan</h1>
-            <p>Web Developer | Designer | Programmer</p>
-        </div>
-        
+        <h1>Sri Varshan.V</h1>
+        <p>Web Developer | Designer | Content Creator</p>
     </header>
 
-    <!-- Slider Container -->
-    <div class="slider-container">
-        <div class="slides">
-            <!-- Slide 1: About Me -->
-            <div class="slide">
-                <div>
-                    <h2>About Me</h2>
-                    <p>Hello, I'm sri varshan.v. I am a passionate web developer with a keen interest in creating dynamic web applications. I specialize in both front-end and back-end development, and my goal is to build user-friendly and efficient digital solutions.</p>
-                </div>
-            </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-            <!-- Slide 2: Skills -->
-            <div class="slide skills">
-                <div>
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-            </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Sri Varshan.V, an Electronics and Communication Engineering (ECE) student with a strong passion for technology, particularly in web development. I love working with both hardware and software solutions, and I'm especially interested in creating user-friendly websites that blend engineering and technology.</p>
+    </section>
 
-            <!-- Slide 3: Projects -->
-            <div class="slide">
-                <div>
-                    <h2>Projects</h2>
-                    <p>Here are some of the projects I have worked on:</p>
-                    <ul>
-                        <li>Project 1: E-commerce Website</li>
-                        <li>Project 2: Blogging Platform</li>
-                        <li>Project 3: Task Manager Application</li>
-                    </ul>
-                </div>
-            </div>
+    <section id="projects">
+        <h2><i class="fas fa-tasks"></i> Projects</h2>
+        <ul>
+            <li><strong>IoT-based Home Automation System:</strong> Designed a system to control home appliances remotely using a mobile app.</li>
+            <li><strong>Line Follower Robot:</strong> Built an autonomous robot using Arduino to follow a predefined path.</li>
+            <li><strong>Personal Portfolio Website:</strong> Created a dynamic and responsive personal portfolio using HTML, CSS, and JavaScript.</li>
+            <li><strong>Signal Processing in MATLAB:</strong> Developed algorithms for audio signal filtering and enhancement.</li>
+        </ul>
+    </section>
 
-            <!-- Slide 4: Contact -->
-            <div class="slide">
-                <div>
-                    <h2>Contact</h2>
-                    <p>If you'd like to connect, feel free to reach out via email at <strong>sri varshan@example.com</strong></p>
-                </div>
+    <section id="education">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <p><strong>SRI KRISHNA COLLAGE OF ENGINEERING AND TECNOLOGY</strong></p>
+        <p>B.Tech. in Electronics and Communication Engineering</p>
+        <p>Expected Graduation:2027</p>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill">
+                <h3>C++</h3>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill">
+                <h3>Pytron</h3>
             </div>
         </div>
+    </section>
+    
 
-        <!-- Navigation Buttons -->
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+            <ul>
+                <li>Email: sri varshan006@gmail.com</li>
+                <li>Phone: +91 9080967571</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/sri-varshan-205b48340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></li>
+            </ul>
+        </div>
+    </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Gunaseelan. All rights reserved.</p>
+        <p>&copy; 2025 Sri Varshan. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Slide Navigation -->
-    <script>
-        let currentSlide = 0;
-
-        function moveSlide(direction) {
-            const slides = document.querySelector('.slides');
-            const totalSlides = document.querySelectorAll('.slide').length;
-
-            // Update the current slide index
-            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-
-            // Move the slides
-            slides.style.transform = translateX(-${currentSlide * 100}%);
-        }
-    </script>
-
 </body>
+
 </html>
+<style>)
+<section id="template">
+        <h2>template</h2>
+        <div class="template">
+            <a href="https://images.app.goo.gl/534218spEefW7SuV7"
+        </div>
+    </section> 
+
+    background-size: cover; /* Ensure the background covers the entire screen */
+    color: #fff; /*https://images.app.goo.gl/534218spEefW7SuV7 */
+}
+
+header {
+    background: rgba(51, 51, 51, 0.7); /* Semi-transparent background for the header */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background: rgba(68, 68, 68, 0.7); /* Semi-transparent background for the navigation */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+section {
+    padding: 40px 10%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Add background to sections with slight transparency */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.projects,
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project,
+.skill {
+    background: rgba(255, 255, 255, 0.8); /* Light background for each project/skill */
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    border-radius: 8px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Animal icon styles */
+.animal-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.project h3,
+.skill h3 {
+    color: #3e8e41; /* Matching text color with header */
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: underline;
+}</style>
+'
+    
+</head>
+
+<body>
+
+    
